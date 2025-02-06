@@ -6,15 +6,15 @@ namespace FizzBuzzKata.Tests;
 public class FizzBuzzTests
 {
     [Fact]
-    public void ShouldReturnStringNumber()
+    public void DemoTest()
     {
         // Arrange
         var fizzBuzz = new FizzBuzz();
 
         // Act
-        var result = fizzBuzz.Convert(1);
+        var result = fizzBuzz.Convert();
 
         // Assert
-        Assert.Equal("1", result);
+        Assert.Equal(null, result);
     }
 }

@@ -96,3 +96,4 @@
 /Users/stefan/Formation/Technosylva/FizzBuzzKata/obj/Debug/net8.0/FizzBuzzKata.pdb
 /Users/stefan/Formation/Technosylva/FizzBuzzKata/obj/Debug/net8.0/FizzBuzzKata.genruntimeconfig.cache
 /Users/stefan/Formation/Technosylva/FizzBuzzKata/obj/Debug/net8.0/ref/FizzBuzzKata.dll
+/Users/stefan/Formation/Technosylva/FizzBuzzKata/obj/Debug/net8.0/FizzBuzzKata.sourcelink.json
