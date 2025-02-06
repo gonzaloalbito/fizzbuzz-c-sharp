@@ -6,7 +6,7 @@ namespace FizzBuzzKata.Tests;
 public class FizzBuzzTests
 {
     [Fact]
-    public void Add_ReturnsCorrectSum()
+    public void ShouldReturnStringNumber()
     {
         // Arrange
         var fizzBuzz = new FizzBuzz();
