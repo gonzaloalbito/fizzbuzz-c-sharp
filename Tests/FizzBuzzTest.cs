@@ -54,4 +54,52 @@ public class FizzBuzzTests
 
         Assert.Equal("FizzBuzz", result);
     }
+
+    [Theory]
+    [InlineData(0)]
+    public void Convert_ShouldReturnFizzBuzz_WhenNumberIsZero(int input)
+    {
+        var fizzBuzz = new FizzBuzz();
+
+        var result = fizzBuzz.Convert(input);
+
+        Assert.Equal("FizzBuzz", result);
+    }
+
+    [Theory]
+    [InlineData(45)]
+    [InlineData(60)]
+    [InlineData(90)]
+    public void Convert_ShouldReturnFizzBuzz_WhenNumberIsLargeMultipleOfThreeAndFive(int input)
+    {
+        var fizzBuzz = new FizzBuzz();
+
+        var result = fizzBuzz.Convert(input);
+
+        Assert.Equal("FizzBuzz", result);
+    }
+
+    [Theory]
+    [InlineData(99)]
+    [InlineData(333)]
+    public void Convert_ShouldReturnFizz_WhenNumberIsLargeMultipleOfThree(int input)
+    {
+        var fizzBuzz = new FizzBuzz();
+
+        var result = fizzBuzz.Convert(input);
+
+        Assert.Equal("Fizz", result);
+    }
+
+    [Theory]
+    [InlineData(100)]
+    [InlineData(500)]
+    public void Convert_ShouldReturnBuzz_WhenNumberIsLargeMultipleOfFive(int input)
+    {
+        var fizzBuzz = new FizzBuzz();
+
+        var result = fizzBuzz.Convert(input);
+
+        Assert.Equal("Buzz", result);
+    }
 }
