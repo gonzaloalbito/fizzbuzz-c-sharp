@@ -9,30 +9,15 @@ public class FizzBuzzTests
 
 
     [Fact]
-    public void EnsureNumberIsNotZero()
+    public void EnsureNumberIsGreaterThanZero()
     {
-        int number = 0;
-        Assert.Throws<ArgumentOutOfRangeException>(()=>{
-                FizzBuzz.Convert(number);
-            });
-    }
-
-    [Fact]
-    public void EnsureNumberIsNotMinusOne()
-    {
-        int number = -1;
-        Assert.Throws<ArgumentOutOfRangeException>(()=>{
-            FizzBuzz.Convert(number);
-        });
-    }
-
-    [Fact]
-    public void EnsureNumberIsNotMinusTwo()
-    {
-        int number = -2;
-        Assert.Throws<ArgumentOutOfRangeException>(()=>{
-            FizzBuzz.Convert(number);
-        });
+        int[] numbers = [0, -1, -2, -3, -5, -10, -15, -100, -1000];
+        foreach(int number in numbers)
+        {
+            Assert.Throws<ArgumentOutOfRangeException>(()=>{
+                    FizzBuzz.Convert(number);
+                });
+        }
     }
 
     [Fact]
