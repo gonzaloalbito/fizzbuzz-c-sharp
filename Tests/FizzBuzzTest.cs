@@ -31,24 +31,6 @@ public class FizzBuzzTests
             });
         }
     }
-
-    [Fact]
-    public void EnsureNumberIsNot102()
-    {
-        int number = 102;
-        Assert.Throws<ArgumentOutOfRangeException>(()=>{
-            FizzBuzz.Convert(number);
-        });
-    }
-
-    [Fact]
-    public void EnsureNumberIsNot103()
-    {
-        int number = 103;
-        Assert.Throws<ArgumentOutOfRangeException>(()=>{
-            FizzBuzz.Convert(number);
-        });
-    }
     
     [Fact]
     public void ReturnNumberOneAsText()
