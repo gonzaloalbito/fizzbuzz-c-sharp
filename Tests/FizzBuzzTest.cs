@@ -116,5 +116,30 @@ public class FizzBuzzTests
         int number = 12;
         string result = FizzBuzz.Convert(number);
         Assert.Equal(result, "Fizz");
+    }
+    
+    [Fact]
+    public void ReturnNumberFiveAsBuzz()
+    {
+        int number = 5;
+        string result = FizzBuzz.Convert(number);
+        Assert.Equal(result, "Buzz");
     } 
+    
+    [Fact]
+    public void ReturnNumberTenAsBuzz()
+    {
+        int number = 10;
+        string result = FizzBuzz.Convert(number);
+        Assert.Equal(result, "Buzz");
+    } 
+    
+    [Fact]
+    public void ReturnNumberTwentyAsBuzz()
+    {
+        int number = 20;
+        string result = FizzBuzz.Convert(number);
+        Assert.Equal(result, "Buzz");
+    } 
+
 }
