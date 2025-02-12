@@ -12,6 +12,10 @@ public class FizzBuzz
         {
             throw new ArgumentOutOfRangeException("Number should be lower than 101");
         }
+        if(number%3==0)
+        {
+            return "Fizz";
+        }
         return number.ToString();
     }
 }

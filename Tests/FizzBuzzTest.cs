@@ -85,4 +85,36 @@ public class FizzBuzzTests
         string result = FizzBuzz.Convert(number);
         Assert.Equal(result, "4");
     }
+    
+    [Fact]
+    public void ReturnNumberThreeAsFizz()
+    {
+        int number = 3;
+        string result = FizzBuzz.Convert(number);
+        Assert.Equal(result, "Fizz");
+    }
+    
+    [Fact]
+    public void ReturnNumberSixAsFizz()
+    {
+        int number = 6;
+        string result = FizzBuzz.Convert(number);
+        Assert.Equal(result, "Fizz");
+    }
+    
+    [Fact]
+    public void ReturnNumberNineAsFizz()
+    {
+        int number = 9;
+        string result = FizzBuzz.Convert(number);
+        Assert.Equal(result, "Fizz");
+    }
+    
+    [Fact]
+    public void ReturnNumberTwelveAsFizz()
+    {
+        int number = 12;
+        string result = FizzBuzz.Convert(number);
+        Assert.Equal(result, "Fizz");
+    } 
 }
