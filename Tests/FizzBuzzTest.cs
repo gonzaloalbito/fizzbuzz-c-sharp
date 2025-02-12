@@ -5,8 +5,8 @@ namespace FizzBuzzKata.Tests;
 
 public class FizzBuzzTests
 {
-    //private static readonly int[] DIV3 = [3,6,9,12,15,18,21,24,27,30,33,36,39,42,45,48,51,54,57,60,63,66,69,72,75,78,81,84,87,90,93,96,99];
-
+    protected const string FIZZ = "Fizz";
+    protected const string BUZZ = "Buzz";
 
     [Fact]
     public void EnsureNumberIsGreaterThan0()
@@ -79,7 +79,7 @@ public class FizzBuzzTests
     {
         int number = 3;
         string result = FizzBuzz.Convert(number);
-        Assert.Equal(result, "Fizz");
+        Assert.Equal(result, FIZZ);
     }
     
     [Fact]
@@ -87,7 +87,7 @@ public class FizzBuzzTests
     {
         int number = 6;
         string result = FizzBuzz.Convert(number);
-        Assert.Equal(result, "Fizz");
+        Assert.Equal(result, FIZZ);
     }
     
     [Fact]
@@ -95,7 +95,7 @@ public class FizzBuzzTests
     {
         int number = 9;
         string result = FizzBuzz.Convert(number);
-        Assert.Equal(result, "Fizz");
+        Assert.Equal(result, FIZZ);
     }
     
     [Fact]
@@ -103,7 +103,7 @@ public class FizzBuzzTests
     {
         int number = 12;
         string result = FizzBuzz.Convert(number);
-        Assert.Equal(result, "Fizz");
+        Assert.Equal(result, FIZZ);
     }
     
     [Fact]
@@ -111,7 +111,7 @@ public class FizzBuzzTests
     {
         int number = 5;
         string result = FizzBuzz.Convert(number);
-        Assert.Equal(result, "Buzz");
+        Assert.Equal(result, BUZZ);
     }
     
     [Fact]
@@ -119,7 +119,7 @@ public class FizzBuzzTests
     {
         int number = 10;
         string result = FizzBuzz.Convert(number);
-        Assert.Equal(result, "Buzz");
+        Assert.Equal(result, BUZZ);
     }
     
     [Fact]
@@ -127,7 +127,7 @@ public class FizzBuzzTests
     {
         int number = 20;
         string result = FizzBuzz.Convert(number);
-        Assert.Equal(result, "Buzz");
+        Assert.Equal(result, BUZZ);
     }
     
     [Fact]
@@ -135,7 +135,7 @@ public class FizzBuzzTests
     {
         int number = 15;
         string result = FizzBuzz.Convert(number);
-        Assert.Equal(result, "FizzBuzz");
+        Assert.Equal(result, FIZZ+BUZZ);
     }
     
     [Fact]
@@ -143,7 +143,7 @@ public class FizzBuzzTests
     {
         int number = 30;
         string result = FizzBuzz.Convert(number);
-        Assert.Equal(result, "FizzBuzz");
+        Assert.Equal(result, FIZZ+BUZZ);
     }
     
     [Fact]
@@ -151,7 +151,7 @@ public class FizzBuzzTests
     {
         int number = 45;
         string result = FizzBuzz.Convert(number);
-        Assert.Equal(result, "FizzBuzz");
+        Assert.Equal(result, FIZZ+BUZZ);
     }
     
     [Fact]
@@ -159,7 +159,7 @@ public class FizzBuzzTests
     {
         int number = 60;
         string result = FizzBuzz.Convert(number);
-        Assert.Equal(result, "FizzBuzz");
+        Assert.Equal(result, FIZZ+BUZZ);
     }
 
 }
