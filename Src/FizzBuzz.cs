@@ -2,5 +2,8 @@ namespace FizzBuzzKata.Src;
 
 public class FizzBuzz
 {
-    public string Convert() => null;
+    public static string Convert(int number)
+    {
+        return number.ToString();
+    }
 }
