@@ -35,9 +35,12 @@ public class FizzBuzzTests
     [Fact]
     public void ReturnNumberOneAsText()
     {
-        int number = 1;
-        string result = FizzBuzz.Convert(number);
-        Assert.Equal(result, "1");
+        int[] numbers = [1, 2, 4, 6, 7, 11, 34, 46, 57, 68, 79];
+        foreach(int number in numbers)
+        {
+            string result = FizzBuzz.Convert(number);
+            Assert.Equal(result, ""+number);
+        }
     }
     
     [Fact]
@@ -57,91 +60,35 @@ public class FizzBuzzTests
     }
     
     [Fact]
-    public void ReturnNumberThreeAsFizz()
+    public void ReturnMultiplesOfThreeAsFizz()
     {
-        int number = 3;
-        string result = FizzBuzz.Convert(number);
-        Assert.Equal(result, FIZZ);
+        int[] numbers = [3, 6, 9, 12, 18, 27];
+        foreach(int number in numbers)
+        {
+            string result = FizzBuzz.Convert(number);
+            Assert.Equal(result, FIZZ);
+        }
     }
     
     [Fact]
-    public void ReturnNumberSixAsFizz()
+    public void ReturnMultiplesOfFiveAsBuzz()
     {
-        int number = 6;
-        string result = FizzBuzz.Convert(number);
-        Assert.Equal(result, FIZZ);
+        int[] numbers = [5, 10, 20, 25, 50];
+        foreach(int number in numbers)
+        {
+            string result = FizzBuzz.Convert(number);
+            Assert.Equal(result, BUZZ);
+        }
     }
     
     [Fact]
-    public void ReturnNumberNineAsFizz()
+    public void ReturnMultiplesOfThreeAndFiveAsFizzBuzz()
     {
-        int number = 9;
-        string result = FizzBuzz.Convert(number);
-        Assert.Equal(result, FIZZ);
+        int[] numbers = [15, 30, 45, 60, 90];
+        foreach(int number in numbers)
+        {
+            string result = FizzBuzz.Convert(number);
+            Assert.Equal(result, FIZZ+BUZZ);
+        }
     }
-    
-    [Fact]
-    public void ReturnNumberTwelveAsFizz()
-    {
-        int number = 12;
-        string result = FizzBuzz.Convert(number);
-        Assert.Equal(result, FIZZ);
-    }
-    
-    [Fact]
-    public void ReturnNumberFiveAsBuzz()
-    {
-        int number = 5;
-        string result = FizzBuzz.Convert(number);
-        Assert.Equal(result, BUZZ);
-    }
-    
-    [Fact]
-    public void ReturnNumberTenAsBuzz()
-    {
-        int number = 10;
-        string result = FizzBuzz.Convert(number);
-        Assert.Equal(result, BUZZ);
-    }
-    
-    [Fact]
-    public void ReturnNumberTwentyAsBuzz()
-    {
-        int number = 20;
-        string result = FizzBuzz.Convert(number);
-        Assert.Equal(result, BUZZ);
-    }
-    
-    [Fact]
-    public void ReturnNumberFifteenAsFizzBuzz()
-    {
-        int number = 15;
-        string result = FizzBuzz.Convert(number);
-        Assert.Equal(result, FIZZ+BUZZ);
-    }
-    
-    [Fact]
-    public void ReturnNumberThirteenAsFizzBuzz()
-    {
-        int number = 30;
-        string result = FizzBuzz.Convert(number);
-        Assert.Equal(result, FIZZ+BUZZ);
-    }
-    
-    [Fact]
-    public void ReturnNumberFourtyfiveAsFizzBuzz()
-    {
-        int number = 45;
-        string result = FizzBuzz.Convert(number);
-        Assert.Equal(result, FIZZ+BUZZ);
-    }
-    
-    [Fact]
-    public void ReturnNumberSixteenAsFizzBuzz()
-    {
-        int number = 60;
-        string result = FizzBuzz.Convert(number);
-        Assert.Equal(result, FIZZ+BUZZ);
-    }
-
 }
