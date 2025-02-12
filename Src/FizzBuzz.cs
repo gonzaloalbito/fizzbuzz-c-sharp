@@ -2,6 +2,9 @@ namespace FizzBuzzKata.Src;
 
 public class FizzBuzz
 {
+    protected const string FIZZ = "Fizz";
+    protected const string BUZZ = "Buzz";
+    
     public static string Convert(int number)
     {
         if(number<=0)
@@ -14,15 +17,15 @@ public class FizzBuzz
         }
         if(number%15==0)
         {
-            return "FizzBuzz";
+            return FIZZ+BUZZ;
         }
         if(number%3==0)
         {
-            return "Fizz";
+            return FIZZ;
         }
         if(number%5==0)
         {
-            return "Buzz";
+            return BUZZ;
         }
         return number.ToString();
     }
