@@ -9,7 +9,7 @@ public class FizzBuzzTests
 
 
     [Fact]
-    public void EnsureNumberIsGreaterThanZero()
+    public void EnsureNumberIsGreaterThan0()
     {
         int[] numbers = [0, -1, -2, -3, -5, -10, -15, -100, -1000];
         foreach(int number in numbers)
@@ -21,12 +21,15 @@ public class FizzBuzzTests
     }
 
     [Fact]
-    public void EnsureNumberIsNot101()
+    public void EnsureNumberIsLowerThan101()
     {
-        int number = 101;
-        Assert.Throws<ArgumentOutOfRangeException>(()=>{
-            FizzBuzz.Convert(number);
-        });
+        int[] numbers = [101, 102, 103, 105, 1000];
+        foreach(int number in numbers)
+        {
+            Assert.Throws<ArgumentOutOfRangeException>(()=>{
+                FizzBuzz.Convert(number);
+            });
+        }
     }
 
     [Fact]
